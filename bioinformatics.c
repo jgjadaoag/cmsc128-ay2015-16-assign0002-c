@@ -75,3 +75,20 @@ int getMaxSkewN(char* str, int index) {
 	}
 	return maxSkew;
 }
+
+int getMinSkewN(char* str, int index) {
+	int minSkew = (*str == 'G')? 1: 0;
+	int count;
+	for(count = 0; *str != '\0' && index > 0; index--, str++) {
+		if ( *str == 'G') {
+			count++;
+		} else if (*str == 'C') {
+			count--;
+		}
+
+		if(count < minSkew) {
+			minSkew = count;
+		};
+	}
+	return minSkew;
+}

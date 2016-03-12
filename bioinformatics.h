@@ -5,5 +5,7 @@ int getHammingDistance(char*, char*);
 int countSubstrPattern(char*,char*);
 int isValidString(char*,char*);
 int getSkew(char*,int);
+int getMaxSkewN(char*,int);
+int getMinSkewN(char*,int);
 
 #endif

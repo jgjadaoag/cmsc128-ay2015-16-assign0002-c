@@ -21,7 +21,10 @@ int main(int argc, char** argv) {
 			printf("%d", getSkew(argv[2], atoi(argv[3])));
 			break;
 		case 5: 
-			printf("%d", getSkew(argv[2], atoi(argv[3])));
+			printf("%d", getMaxSkewN(argv[2], atoi(argv[3])));
+			break;
+		case 6: 
+			printf("%d", getMinSkewN(argv[2], atoi(argv[3])));
 			break;
 	}
 	putchar('\n');
